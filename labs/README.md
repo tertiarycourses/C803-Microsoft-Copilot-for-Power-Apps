@@ -1,8 +1,8 @@
 # Labs — Microsoft Copilot for Power Apps (C803)
 
-**Course Code:** C803  |  **Version v1.1 · 4 October 2026**
+**Course Code:** C803  |  **Version v1.2 · 4 October 2026**
 
-All 10 labs build a **single connected solution** — a **Maintenance Request** app for the fictional **Harbourfront Facilities** — which you build, refine, automate and govern with Copilot in Power Apps across the day, starting in Lab 1 and completing in Lab 10. Wherever possible, use your own non-confidential app idea; the Harbourfront Facilities scenario is provided for everyone to follow along. There is **no assessment** — each lab verifies itself with a 'Test it' step.
+All 10 labs build a **single connected solution** — a **Maintenance Request** app for the fictional **Harbourfront Facilities** — which you build, refine, automate and govern with Copilot in Power Apps across the two days, starting in Lab 1 and completing in Lab 10. Wherever possible, use your own non-confidential app idea; the Harbourfront Facilities scenario is provided for everyone to follow along. There is **no assessment** — each lab verifies itself with a 'Test it' step.
 
 | Topic | Lab | Title |
 |---|---:|---|
@@ -23,4 +23,4 @@ See [tools.md](tools.md) for the accounts and apps used across the labs.
 
 ---
 
-*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.2 · © 2026 Tertiary Infotech Academy Pte Ltd*

@@ -2,8 +2,8 @@
 """Generate the non-WSQ Lesson Plan (LP) DOCX in the Tertiary house format.
 
 Cover page + Document Version Control Record + auto TOC + Arial 11pt body +
-colour-coded daily schedule tables (9:30am-6:30pm, 8 training hours/day, 1h
-lunch, tea within). NO assessment, funding, SSG or TRAQOM content. Day themes,
+colour-coded daily schedule tables (9:30am-5:30pm, 7.5 instructional hours/day,
+one 30-minute lunch). NO assessment, funding, SSG or TRAQOM content. Day themes,
 topics, schedule and labs all come from course_data + the domain data files so
 the LP stays aligned with the deck, guide and labs.
 """
@@ -69,7 +69,7 @@ H("Course Information",1)
 info=[("Course Title",C.TITLE),("Course Reference",C.COURSE_CODE),
       ("Training Provider",C.ORG+"  ("+C.UEN.replace('UEN: ','UEN ')+")"),
       ("Duration",f"{C.DAYS} day{'s' if C.DAYS>1 else ''} · 7.5 instructional hours per day ({C.DAYS*7.5:g} hours)"),
-      ("Daily Timing","9:30 am – 6:30 pm (1-hour lunch; tea breaks within training time)"),
+      ("Daily Timing","9:30 am – 5:30 pm (30-minute lunch)"),
       ("Mode",getattr(C,"MODE","Instructor-led, hands-on practical labs")),
       ("Trainer",C.TRAINER)]
 t=doc.add_table(rows=0,cols=2); t.style="Table Grid"
@@ -125,10 +125,11 @@ for day,(theme,rows) in SCHEDULE.items():
     tea=sum(m for _s,_e,m,k,_t in rows if k=="break")
     inst=training-tea
     r=doc.add_paragraph().add_run(
-        f"Total scheduled time: {training} minutes ({training//60} hours) excluding lunch — "
-        f"of which {inst} minutes ({inst/60:g} hours) are instructional, plus {tea} minutes of tea breaks.")
+        f"Total scheduled time: {training} minutes ({training/60:g} hours) excluding lunch — "
+        f"of which {inst} minutes ({inst/60:g} hours) are instructional"
+        + (f", plus {tea} minutes of tea breaks." if tea else "."))
     r.italic=True; r.font.size=Pt(9.5); r.font.color.rgb=GREY
-    assert training==480, f"Day {day} scheduled minutes = {training}, expected 480"
+    assert inst==450, f"Day {day} instructional minutes = {inst}, expected 450"
 
 H("Lab Reference (aligned to course topics)",1)
 tt=doc.add_table(rows=0,cols=3); tt.style="Table Grid"

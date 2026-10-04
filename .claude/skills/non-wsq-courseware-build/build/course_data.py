@@ -1,7 +1,7 @@
 """
 SINGLE SOURCE OF TRUTH — C803 Microsoft Copilot for Power Apps (non-WSQ).
 
-A beginner, one-day (7.5 hours), hands-on short course on building business
+A beginner, two-day (15 hours), hands-on short course on building business
 applications faster with Copilot, Microsoft's AI assistant inside Power Apps.
 Learners enable Copilot in Power Apps Studio, prepare data in Dataverse,
 generate a working canvas app from a plain-English prompt, refine screens and
@@ -21,12 +21,12 @@ NON-WSQ RULES — the engine enforces these, do not reintroduce them here:
 TITLE        = "Microsoft Copilot for Power Apps (C803)"
 SHORT_TITLE  = "Microsoft Copilot for Power Apps (C803)"   # used in output filenames
 COURSE_CODE  = "C803"                            # non-WSQ code — never a TGS- ref
-VERSION      = "v1.1"
+VERSION      = "v1.2"
 VERSION_DATE = "4 October 2026"
 ORG          = "Tertiary Infotech Academy Pte Ltd"
 UEN          = "UEN: 201200696W"
 TRAINER      = "Dr. Alfred Ang"
-DAYS         = 1
+DAYS         = 2
 MODE         = "Instructor-led, hands-on practical labs"
 
 DARK_THEME = False
@@ -107,29 +107,41 @@ TOPICS = [
 
 # ------------------------------------------------------------------ day themes
 DAY_THEMES = {
-    1: "Getting Copilot ready in Power Apps, building a canvas app with Copilot, then automating and governing it with Power Automate",
+    1: "Getting Copilot ready in Power Apps and building a canvas app with Copilot",
+    2: "Extending the app with Copilot chat, automating it with Power Automate, and sharing and governing it",
 }
 
+# Day on which each lab is run (used in the lab headers; mirrors SCHEDULE below).
+LAB_DAY = {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 2, 8: 2, 9: 2, 10: 2}
+
 # ------------------------------------------------------------------ schedule
-# NON-WSQ: no assessment blocks. The single training day totals 540 minutes
-# (9:30-18:30) — of which 60 minutes are lunch and 30 minutes are tea breaks, so
-# 450 minutes (7.5 hours) are instructional, matching the advertised duration.
+# NON-WSQ: no assessment blocks. Each day runs 9:30-17:30 with ONE 30-minute
+# lunch and no tea breaks, so each day carries 450 instructional minutes
+# (7.5 hours) — 15 hours over the two days, matching the advertised duration.
 def SCHEDULE(lab_titles):
     return {
      1: (DAY_THEMES[1], [
         ("9:30","9:50",20,"admin","Welcome, course introduction, ground rules, and confirming Power Apps access and that Copilot is enabled for the labs"),
-        ("9:50","10:40",50,"topic","TOPIC 01 — Get Started with Copilot in Power Apps: what Copilot and the Power Platform are; licensing, requirements and enabling Copilot; a tour of Power Apps Studio; effective prompting for app building; preparing data with Dataverse (concepts + live demo)"),
-        ("10:40","11:30",50,"lab","Hands-on: "+lab_titles([1,2])),
-        ("11:30","11:45",15,"break","Tea break"),
-        ("11:45","12:25",40,"lab","Hands-on: "+lab_titles([3])),
-        ("12:25","13:00",35,"topic","TOPIC 02 — Build Canvas Apps with Copilot: creating an app from a prompt; refining screens, controls and layouts; generating and explaining Power Fx; adding an in-app Copilot chat (concepts + live demo)"),
-        ("13:00","14:00",60,"lunch","Lunch break"),
-        ("14:00","15:20",80,"lab","Hands-on: "+lab_titles([4,5,6])),
-        ("15:20","15:45",25,"lab","Hands-on: "+lab_titles([7])),
-        ("15:45","16:00",15,"break","Tea break"),
-        ("16:00","16:40",40,"topic","TOPIC 03 — Automate and Extend with Copilot: building Power Automate flows with Copilot; integrating flows with canvas apps; approval and notification scenarios; sharing and governing AI-assisted apps (concepts + live demo)"),
-        ("16:40","18:15",95,"lab","Hands-on: "+lab_titles([8,9,10])),
-        ("18:15","18:30",15,"recap","Course wrap-up, your Copilot-for-Power-Apps workflow and next steps"),
+        ("9:50","10:50",60,"topic","TOPIC 01 — Get Started with Copilot in Power Apps: what Copilot and the Power Platform are; licensing, requirements and enabling Copilot; a tour of Power Apps Studio; effective prompting for app building; preparing data with Dataverse (concepts + live demo)"),
+        ("10:50","11:50",60,"lab","Hands-on: "+lab_titles([1,2])),
+        ("11:50","13:00",70,"lab","Hands-on: "+lab_titles([3])),
+        ("13:00","13:30",30,"lunch","Lunch break"),
+        ("13:30","14:30",60,"topic","TOPIC 02 — Build Canvas Apps with Copilot: creating an app from a prompt; refining screens, controls and layouts; generating and explaining Power Fx (concepts + live demo)"),
+        ("14:30","16:00",90,"lab","Hands-on: "+lab_titles([4,5])),
+        ("16:00","17:15",75,"lab","Hands-on: "+lab_titles([6])),
+        ("17:15","17:30",15,"recap","Day 1 recap and Q&A"),
+     ]),
+     2: (DAY_THEMES[2], [
+        ("9:30","9:45",15,"admin","Day 1 review and the plan for Day 2"),
+        ("9:45","10:15",30,"topic","TOPIC 02 (continued) — Adding an in-app Copilot chat so users can query the app's data in natural language (concepts + live demo)"),
+        ("10:15","11:15",60,"lab","Hands-on: "+lab_titles([7])),
+        ("11:15","12:00",45,"topic","TOPIC 03 — Automate and Extend with Copilot: building Power Automate flows with Copilot; integrating flows with canvas apps; approval and notification scenarios; sharing and governing AI-assisted apps (concepts + live demo)"),
+        ("12:00","13:00",60,"lab","Hands-on: "+lab_titles([8])),
+        ("13:00","13:30",30,"lunch","Lunch break"),
+        ("13:30","14:45",75,"lab","Hands-on: "+lab_titles([9])),
+        ("14:45","15:45",60,"lab","Hands-on: "+lab_titles([10])),
+        ("15:45","17:00",75,"lab","Applied practice: rebuild the solution on your own non-confidential app idea — prompt, refine, automate and share it end to end, with trainer feedback"),
+        ("17:00","17:30",30,"recap","Course wrap-up, your Copilot-for-Power-Apps workflow and next steps"),
      ]),
     }
 
@@ -191,7 +203,7 @@ LG_SETUP = dict(
     needs=[
         "A laptop (Windows or Mac) with a current Chrome or Edge browser.",
         "A Microsoft work or school account (not a personal Microsoft account) with access to Power Apps at make.powerapps.com — a Microsoft 365 developer or trial tenant is enough to follow every lab.",
-        "A Power Apps environment with Dataverse and Copilot enabled — the trainer confirms your environment and that Copilot is switched on at the start of the day.",
+        "A Power Apps environment with Dataverse and Copilot enabled — the trainer confirms your environment and that Copilot is switched on at the start of Day 1.",
         "Access to Power Automate (flow.microsoft.com or the Flows area in Power Apps) using the same account, for the automation labs.",
         "The 'Harbourfront Facilities — Maintenance' scenario notes (the column list and sample requests the trainer shares) — or your own non-confidential app idea and data.",
     ],
@@ -213,7 +225,7 @@ LAB_NOTE = (
 )
 LG_WRAPUP = dict(
     title="Wrap-Up",
-    intro="In one day you have taken a facilities team's everyday need — logging, approving and tracking maintenance requests — and turned it into a working, automated Power Apps solution, using Copilot at every step and checking its work before publishing.",
+    intro="Over two days you have taken a facilities team's everyday need — logging, approving and tracking maintenance requests — and turned it into a working, automated Power Apps solution, using Copilot at every step and checking its work before publishing.",
     sections=[
         dict(title="What you built", bullets=[
             "Copilot enabled in Power Apps Studio and a clear picture of what Copilot can and cannot do.",
@@ -264,5 +276,6 @@ LG_GLOSSARY = [
 # ------------------------------------------------------------------ version history
 VERSION_HISTORY = [
     ("1.0", "27 July 2026", "Initial release — C803 Copilot for Power Apps courseware.", TRAINER),
-    ("1.1", VERSION_DATE, "Course retitled to Microsoft Copilot for Power Apps.", TRAINER),
+    ("1.1", "4 October 2026", "Course retitled to Microsoft Copilot for Power Apps.", TRAINER),
+    ("1.2", VERSION_DATE, "Extended to two days (15 hours): longer hands-on labs and a Day 2 applied-practice block.", TRAINER),
 ]

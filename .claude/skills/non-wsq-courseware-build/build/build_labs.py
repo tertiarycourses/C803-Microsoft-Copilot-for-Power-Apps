@@ -44,56 +44,56 @@ def is_formula(cmd):
 
 # ---- per-lab enrichment (NOT alignment-critical; lab-only detail) -----------
 ENRICH = {
- 1: dict(mins=25, prereq=["A Microsoft work or school account with access to Power Apps.",
+ 1: dict(mins=30, prereq=["A Microsoft work or school account with access to Power Apps.",
                           "Copilot and Dataverse enabled in your environment (the trainer confirms this)."],
     trouble=["**You only have a personal Microsoft account.** Copilot for Power Apps needs a work or school account; ask the trainer for a training tenant sign-in.",
              "**No environment appears in the picker.** You may not be assigned to one yet — tell the trainer so they can add you.",
              "**The Copilot pane/icon is missing.** Copilot may be off for the environment; the trainer will enable it or share a Copilot-ready environment."],
     challenge="Open the Copilot pane in a blank app and ask it to add a screen, then undo — get a feel for how it responds before Lab 4."),
- 2: dict(mins=25, prereq=["Lab 1 complete — you are signed in to the correct, Copilot-enabled environment."],
+ 2: dict(mins=30, prereq=["Lab 1 complete — you are signed in to the correct, Copilot-enabled environment."],
     trouble=["**'New table' is greyed out.** Dataverse may not be provisioned in your environment; tell the trainer.",
              "**A choice column won't save its options.** Add each option on its own line and save the column before adding the next.",
              "**You can't find the table later.** Check you are still in the same environment (top-right picker) — tables are per-environment."],
     challenge="Add a description to every column explaining what a facilities coordinator would put there — the richer the descriptions, the better Copilot builds in Lab 4."),
- 3: dict(mins=40, prereq=["Lab 2 complete — the Maintenance Requests table exists so you can name it in a prompt."],
+ 3: dict(mins=70, prereq=["Lab 2 complete — the Maintenance Requests table exists so you can name it in a prompt."],
     trouble=["**Copilot's proposal ignores your table.** Name the exact table ('Maintenance Requests') in the prompt; Copilot grounds better when the data source is explicit.",
              "**The proposal has too many screens.** State the screens you want explicitly and say 'no other screens'.",
              "**Copilot proposes a model-driven app.** Say 'canvas app' in the prompt — this course builds canvas apps."],
     challenge="Write a second app prompt for a different idea of your own using the four-part pattern, and compare how specific you can make it."),
- 4: dict(mins=27, prereq=["Lab 3 complete — you have a saved, specific app-building prompt.",
+ 4: dict(mins=45, prereq=["Lab 3 complete — you have a saved, specific app-building prompt.",
                           "The Maintenance Requests table with sample rows (Lab 2)."],
     trouble=["**The app shows no data.** Confirm you chose Dataverse and the Maintenance Requests table when Copilot asked for a data source.",
              "**A submitted request doesn't appear.** Check the form's OnSuccess refreshes the gallery; ask Copilot to 'refresh the requests gallery after a new request is submitted'.",
              "**Generation fails or times out.** Simplify the prompt to the three screens, generate, then add extras by refining in Lab 5."],
     challenge="Ask Copilot to add a search box to the browse screen that filters requests by Title, then test it."),
- 5: dict(mins=27, prereq=["Lab 4 complete — the 'Harbourfront Maintenance' app runs on your data."],
+ 5: dict(mins=45, prereq=["Lab 4 complete — the 'Harbourfront Maintenance' app runs on your data."],
     trouble=["**A refinement changed the wrong control.** Tell Copilot which screen and control you mean ('the gallery on the browse screen') and re-run.",
              "**The filter hides everything.** Check the Status choice values match ('Resolved'); ask Copilot to show the formula it used.",
              "**Layout looks cramped on tablet.** Ask Copilot to increase spacing and use a container to align the fields."],
     challenge="Ask Copilot to add a colour legend explaining what red/amber/green mean for priority."),
- 6: dict(mins=26, prereq=["Lab 5 complete — a refined app with a Priority tag, a header and a detail screen."],
+ 6: dict(mins=75, prereq=["Lab 5 complete — a refined app with a Priority tag, a header and a detail screen."],
     trouble=["**A formula shows an error (red squiggle).** Field or choice names may differ; select the control, read the error, and ask Copilot to fix it for your exact column names.",
              "**The colour never turns red.** Confirm the Priority choice value is exactly 'High' (check the table's choice options).",
              "**The count doesn't match the gallery.** The gallery may be filtered while the count is not — align both to the same 'not Resolved' condition."],
     challenge="Ask Copilot for a formula that shows 'Overdue' when a High request has been open more than 2 days, and add it to the gallery."),
- 7: dict(mins=25, prereq=["Lab 6 complete — an app with working Power Fx.",
+ 7: dict(mins=60, prereq=["Lab 6 complete — an app with working Power Fx.",
                           "The in-app Copilot control enabled for your environment (admin setting)."],
     trouble=["**The Copilot control isn't in the Insert menu.** It is an admin-controlled preview feature; the trainer will enable it or show a shared app.",
              "**The chat answers from the web, not your data.** Set the control's data source to the Maintenance Requests table.",
              "**Answers look wrong.** Cross-check against the gallery; if the data source is right but answers drift, rephrase the question more specifically."],
     challenge="Write three example questions a facilities coordinator would ask, and confirm the in-app Copilot answers all three from your data."),
- 8: dict(mins=32, prereq=["Lab 7 complete and a first version published.",
+ 8: dict(mins=60, prereq=["Lab 7 complete and a first version published.",
                           "Access to Power Automate in the same environment, and an Outlook mailbox for testing."],
     trouble=["**The trigger doesn't fire.** Confirm the trigger table is Maintenance Requests and that the new row's Priority is exactly 'High'.",
              "**No email arrives.** Check the Office 365 Outlook connection is signed in as you and the recipient address is valid; look at the flow run history for errors.",
              "**The app can't see the flow.** Add the flow to the app from the Power Automate pane in Studio before calling it in Power Fx."],
     challenge="Add the request's Category and a link back to the app in the notification email by refining the flow with Copilot."),
- 9: dict(mins=32, prereq=["Lab 8 complete — a working flow triggered by high-priority requests, callable from the app."],
+ 9: dict(mins=75, prereq=["Lab 8 complete — a working flow triggered by high-priority requests, callable from the app."],
     trouble=["**The approval never arrives.** Confirm the approver address is valid and that the 'Start and wait for an approval' action is before the condition.",
              "**Status doesn't update.** Check each 'Update a row' action targets the triggering record's row ID and sets the Status choice to a valid value.",
              "**Both branches run.** Ensure the outcome is checked with a Condition (Outcome = Approve) so only one branch's actions run."],
     challenge="Add a comment box to the approval and write the manager's comment into the request's Resolution Notes on rejection."),
- 10: dict(mins=31, prereq=["Lab 9 complete — the full approval-and-notification flow works end to end."],
+ 10: dict(mins=60, prereq=["Lab 9 complete — the full approval-and-notification flow works end to end."],
     trouble=["**Shared users get a connection error.** Share the app's flow connections (or use a service/connection reference) so shared users can run the automation.",
              "**A colleague can edit when they shouldn't.** Re-share as a run-only user, not a co-owner.",
              "**You're unsure which connectors are allowed.** Ask your admin about the environment's DLP policy before publishing to real users."],
@@ -109,7 +109,7 @@ def lab_md(a):
     out = []
     out.append(f"# Lab {a['num']} — {a['title']}")
     out.append("")
-    out.append(f"**Topic {t['code']}:** {t['title']}  |  **Day 1**  |  **Approx. {e['mins']} min**  |  **Course:** {C.TITLE}")
+    out.append(f"**Topic {t['code']}:** {t['title']}  |  **Day {C.LAB_DAY.get(a['num'], 1)}**  |  **Approx. {e['mins']} min**  |  **Course:** {C.TITLE}")
     out.append("")
     out.append("## Scenario"); out.append("")
     out.append(SCENARIO); out.append("")
@@ -174,7 +174,7 @@ r.append(f"# Labs — {C.TITLE}"); r.append("")
 r.append(f"**Course Code:** {C.COURSE_CODE}  |  **Version {C.VERSION} · {C.VERSION_DATE}**"); r.append("")
 r.append("All 10 labs build a **single connected solution** — a **Maintenance Request** app for the fictional "
          "**Harbourfront Facilities** — which you build, refine, automate and govern with Copilot in Power Apps "
-         "across the day, starting in Lab 1 and completing in Lab 10. Wherever possible, use your own "
+         "across the two days, starting in Lab 1 and completing in Lab 10. Wherever possible, use your own "
          "non-confidential app idea; the Harbourfront Facilities scenario is provided for everyone to follow "
          "along. There is **no assessment** — each lab verifies itself with a 'Test it' step."); r.append("")
 r.append("| Topic | Lab | Title |")
@@ -200,7 +200,7 @@ Everything in this course runs in the browser. You need no installs beyond a mod
 ## Accounts
 
 - **A Microsoft work or school account** (not a personal Microsoft account) with access to **Power Apps** at make.powerapps.com.
-- **Copilot enabled** in your Power Apps environment (the trainer confirms access at the start of the day).
+- **Copilot enabled** in your Power Apps environment (the trainer confirms access at the start of Day 1).
 - **Access to Power Automate** (flow.microsoft.com or the Flows area in Power Apps) using the same account, for the automation labs.
 - **An Outlook mailbox** (Office 365) for testing notification and approval emails.
 

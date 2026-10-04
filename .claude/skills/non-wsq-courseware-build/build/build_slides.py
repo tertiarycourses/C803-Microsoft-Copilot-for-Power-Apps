@@ -670,8 +670,8 @@ _TB={t["num"]:t for t in C.TOPICS}
 _d2=min(2,C.DAYS)
 _left=[(f"Day 1 — {C.DAY_THEMES[1]}",0)]+[_topic_line(_TB[n]) for n in _BY_DAY.get(1,[]) if n in _TB]
 _right=[(f"Day {_d2} — {C.DAY_THEMES[_d2]}",0)]+[_topic_line(_TB[n]) for n in _BY_DAY.get(_d2,[]) if n in _TB]+[
- ("Daily timing",0),("9:30am–6:30pm · 1-hour lunch · tea breaks within training time",1)]
-two_col(f"Lesson Plan — {C.DAYS} Day{'s' if C.DAYS>1 else ''}, 8 hours/day",_left,_right,
+ ("Daily timing",0),("9:30am–5:30pm · 30-minute lunch",1)]
+two_col(f"Lesson Plan — {C.DAYS} Day{'s' if C.DAYS>1 else ''}, 7.5 hours/day",_left,_right,
  kicker="SCHEDULE",lhead="Day 1",rhead=f"Day {min(2,C.DAYS)}")
 # Learning-outcome tiles built straight from course_data. Optional per-course
 # short titles via course_data.LO_TITLES; otherwise fall back to "LO1", "LO2", …

@@ -54,11 +54,11 @@ Ten connected labs build one facilities maintenance-request solution. Complete t
 9. [Automate Approval and Notification Scenarios](labs/lab-09-automate-approval-and-notification-scenarios.md)
 10. [Share and Govern Your AI-Assisted App](labs/lab-10-share-and-govern-your-ai-assisted-app.md)
 
-## Courseware package (v1.1)
+## Courseware package (v1.2)
 
 | Item | Files |
 |---|---|
-| Slide deck | [PowerPoint](<courseware/Microsoft Copilot for Power Apps (C803)-v1.1.pptx>) · [PDF](<courseware/Microsoft Copilot for Power Apps (C803)-v1.1.pdf>) |
+| Slide deck | [PowerPoint](<courseware/Microsoft Copilot for Power Apps (C803)-v1.2.pptx>) · [PDF](<courseware/Microsoft Copilot for Power Apps (C803)-v1.2.pdf>) |
 | Learner Guide | [Word](<courseware/LG-Microsoft Copilot for Power Apps (C803).docx>) · [PDF](<courseware/LG-Microsoft Copilot for Power Apps (C803).pdf>) · [Markdown](<LG-Microsoft Copilot for Power Apps (C803).md>) |
 | Lesson Plan | [Word](<courseware/LP-Microsoft Copilot for Power Apps (C803).docx>) · [PDF](<courseware/LP-Microsoft Copilot for Power Apps (C803).pdf>) |
 | Labs | [labs/](labs/README.md) — 10 Markdown lab guides |

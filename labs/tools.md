@@ -1,13 +1,13 @@
 # Tools & Accounts — Microsoft Copilot for Power Apps (C803)
 
-**Course Code:** C803  |  **Version v1.1 · 4 October 2026**
+**Course Code:** C803  |  **Version v1.2 · 4 October 2026**
 
 Everything in this course runs in the browser. You need no installs beyond a modern browser.
 
 ## Accounts
 
 - **A Microsoft work or school account** (not a personal Microsoft account) with access to **Power Apps** at make.powerapps.com.
-- **Copilot enabled** in your Power Apps environment (the trainer confirms access at the start of the day).
+- **Copilot enabled** in your Power Apps environment (the trainer confirms access at the start of Day 1).
 - **Access to Power Automate** (flow.microsoft.com or the Flows area in Power Apps) using the same account, for the automation labs.
 - **An Outlook mailbox** (Office 365) for testing notification and approval emails.
 
@@ -31,4 +31,4 @@ Everything in this course runs in the browser. You need no installs beyond a mod
 
 ---
 
-*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.2 · © 2026 Tertiary Infotech Academy Pte Ltd*

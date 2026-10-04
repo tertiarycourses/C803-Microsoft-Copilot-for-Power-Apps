@@ -1,6 +1,6 @@
 # Lab 4 — Create a Canvas App from a Prompt
 
-**Topic 02:** Build Canvas Apps with Copilot  |  **Day 1**  |  **Approx. 27 min**  |  **Course:** Microsoft Copilot for Power Apps (C803)
+**Topic 02:** Build Canvas Apps with Copilot  |  **Day 1**  |  **Approx. 45 min**  |  **Course:** Microsoft Copilot for Power Apps (C803)
 
 ## Scenario
 
@@ -85,4 +85,4 @@ Save your work — it becomes part of your **Harbourfront Facilities** Maintenan
 
 ---
 
-*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.2 · © 2026 Tertiary Infotech Academy Pte Ltd*

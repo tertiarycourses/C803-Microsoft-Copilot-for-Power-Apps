@@ -1,6 +1,6 @@
 # Microsoft Copilot for Power Apps (C803) — Learner Guide
 
-**Course Code:** C803  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v1.1 · 4 October 2026**
+**Course Code:** C803  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v1.2 · 4 October 2026**
 
 ## Contents
 
@@ -52,7 +52,7 @@ The labs build one connected result. You take the role of a coordinator at a fac
 
 - A laptop (Windows or Mac) with a current Chrome or Edge browser.
 - A Microsoft work or school account (not a personal Microsoft account) with access to Power Apps at make.powerapps.com — a Microsoft 365 developer or trial tenant is enough to follow every lab.
-- A Power Apps environment with Dataverse and Copilot enabled — the trainer confirms your environment and that Copilot is switched on at the start of the day.
+- A Power Apps environment with Dataverse and Copilot enabled — the trainer confirms your environment and that Copilot is switched on at the start of Day 1.
 - Access to Power Automate (flow.microsoft.com or the Flows area in Power Apps) using the same account, for the automation labs.
 - The 'Harbourfront Facilities — Maintenance' scenario notes (the column list and sample requests the trainer shares) — or your own non-confidential app idea and data.
 
@@ -542,7 +542,7 @@ The app is shared with at least one user or group with the flow's connections in
 
 ## Wrap-Up
 
-In one day you have taken a facilities team's everyday need — logging, approving and tracking maintenance requests — and turned it into a working, automated Power Apps solution, using Copilot at every step and checking its work before publishing.
+Over two days you have taken a facilities team's everyday need — logging, approving and tracking maintenance requests — and turned it into a working, automated Power Apps solution, using Copilot at every step and checking its work before publishing.
 
 **What you built**
 
