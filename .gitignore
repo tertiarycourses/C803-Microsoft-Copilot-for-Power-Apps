@@ -3,3 +3,8 @@
 *.tmp
 __pycache__/
 *.pyc
+archive/
+assessment/
+reference/
+.env
+.env.*

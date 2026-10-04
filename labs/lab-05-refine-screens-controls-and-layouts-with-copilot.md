@@ -1,6 +1,6 @@
 # Lab 5 — Refine Screens, Controls and Layouts with Copilot
 
-**Topic 02:** Build Canvas Apps with Copilot  |  **Day 1**  |  **Approx. 27 min**  |  **Course:** Copilot for Power Apps (C803)
+**Topic 02:** Build Canvas Apps with Copilot  |  **Day 1**  |  **Approx. 27 min**  |  **Course:** Microsoft Copilot for Power Apps (C803)
 
 ## Scenario
 
@@ -108,4 +108,4 @@ Save your work — it becomes part of your **Harbourfront Facilities** Maintenan
 
 ---
 
-*Copilot for Power Apps (C803) · C803 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*

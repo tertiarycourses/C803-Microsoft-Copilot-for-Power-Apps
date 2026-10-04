@@ -1,6 +1,6 @@
 # Lab 8 — Build a Power Automate Flow with Copilot and Call It from the App
 
-**Topic 03:** Automate and Extend with Copilot  |  **Day 1**  |  **Approx. 32 min**  |  **Course:** Copilot for Power Apps (C803)
+**Topic 03:** Automate and Extend with Copilot  |  **Day 1**  |  **Approx. 32 min**  |  **Course:** Microsoft Copilot for Power Apps (C803)
 
 ## Scenario
 
@@ -91,4 +91,4 @@ Save your work — it becomes part of your **Harbourfront Facilities** Maintenan
 
 ---
 
-*Copilot for Power Apps (C803) · C803 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*

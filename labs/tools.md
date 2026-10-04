@@ -1,6 +1,6 @@
-# Tools & Accounts — Copilot for Power Apps (C803)
+# Tools & Accounts — Microsoft Copilot for Power Apps (C803)
 
-**Course Code:** C803  |  **Version v1.0 · 27 July 2026**
+**Course Code:** C803  |  **Version v1.1 · 4 October 2026**
 
 Everything in this course runs in the browser. You need no installs beyond a modern browser.
 
@@ -31,4 +31,4 @@ Everything in this course runs in the browser. You need no installs beyond a mod
 
 ---
 
-*Copilot for Power Apps (C803) · C803 · Version v1.0 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Microsoft Copilot for Power Apps (C803) · C803 · Version v1.1 · © 2026 Tertiary Infotech Academy Pte Ltd*

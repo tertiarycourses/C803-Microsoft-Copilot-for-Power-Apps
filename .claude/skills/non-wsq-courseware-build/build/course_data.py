@@ -1,5 +1,5 @@
 """
-SINGLE SOURCE OF TRUTH — C803 Copilot for Power Apps (non-WSQ).
+SINGLE SOURCE OF TRUTH — C803 Microsoft Copilot for Power Apps (non-WSQ).
 
 A beginner, one-day (7.5 hours), hands-on short course on building business
 applications faster with Copilot, Microsoft's AI assistant inside Power Apps.
@@ -18,11 +18,11 @@ NON-WSQ RULES — the engine enforces these, do not reintroduce them here:
 """
 
 # ------------------------------------------------------------------ metadata
-TITLE        = "Copilot for Power Apps (C803)"
-SHORT_TITLE  = "Copilot for Power Apps (C803)"   # used in output filenames
+TITLE        = "Microsoft Copilot for Power Apps (C803)"
+SHORT_TITLE  = "Microsoft Copilot for Power Apps (C803)"   # used in output filenames
 COURSE_CODE  = "C803"                            # non-WSQ code — never a TGS- ref
-VERSION      = "v1.0"
-VERSION_DATE = "27 July 2026"
+VERSION      = "v1.1"
+VERSION_DATE = "4 October 2026"
 ORG          = "Tertiary Infotech Academy Pte Ltd"
 UEN          = "UEN: 201200696W"
 TRAINER      = "Dr. Alfred Ang"
@@ -174,7 +174,7 @@ COURSE_OVERVIEW = dict(
 
 # ------------------------------------------------------------------ LG content
 LG_INTRO = (
-    "This Learner Guide accompanies the Copilot for Power Apps (C803) course, conducted by "
+    "This Learner Guide accompanies the Microsoft Copilot for Power Apps (C803) course, conducted by "
     "Tertiary Infotech Academy Pte Ltd. It carries the full detail of all 10 hands-on labs, in the "
     "order you will run them, together with the concepts each lab depends on."
 )
@@ -263,5 +263,6 @@ LG_GLOSSARY = [
 
 # ------------------------------------------------------------------ version history
 VERSION_HISTORY = [
-    ("1.0", VERSION_DATE, "Initial release — C803 Copilot for Power Apps courseware.", TRAINER),
+    ("1.0", "27 July 2026", "Initial release — C803 Copilot for Power Apps courseware.", TRAINER),
+    ("1.1", VERSION_DATE, "Course retitled to Microsoft Copilot for Power Apps.", TRAINER),
 ]
